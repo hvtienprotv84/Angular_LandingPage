@@ -1,0 +1,165 @@
+.footer {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin: 100px 0px 100px 0px;
+}
+
+.footer h2 {
+  color: var(--color-white-50);
+  margin-bottom: 20px;
+}
+
+.footer p {
+  max-width: 280px;
+  color: var(--color-white-50);
+  line-height: 200%;
+  font-size: 1rem;
+}
+
+.logo2 {
+  font-weight: 700;
+  background: var(--color-green-linear);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#logo2_2{
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#57e5f2;
+}
+
+#footer_myname{
+  font-weight: bold;
+  color: red;
+}
+
+#footer_frontend{
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+}
+
+.footer-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:-50px;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.links ul::after {
+  content: "";
+  background: var(--color-white-50);
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  display: block;
+  top: 70px;
+  left: 0;
+  opacity: 0.2;
+}
+
+a:hover {
+  color: var(--color-white-100);
+}
+
+.copy ul {
+  color: var(--color-white-75);
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .footer a, li {
+    font-size: 0.90rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 70px;
+    margin: 100px 0px 50px 0px;
+  }
+
+  .copy{
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .footer p {
+    max-width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .links ul{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .links a {
+    padding: 10px 15px;
+    background: var(--color-black-left);
+    border-radius: 8px;
+  }
+
+  .copy{
+    margin-top: 50px;
+  }
+
+  .footer p {
+    max-width: 100%;
+  }
+
+  .links ul::after {
+  display: none;
+  }
+
+  .copy ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .copy li {
+    font-size: 0.7rem;
+    color: var(--color-white-50);
+  }
+
+  .footer p {
+    color: var(--color-white-50);
+    line-height: 200%;
+    font-size: 16px;
+    width: 210px;
+  }
+
+  .copy ul {
+    color: var(--color-white-75);
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 320px;
+    margin-left:-230px;
+
+  }
+
+}

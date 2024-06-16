@@ -1,0 +1,15 @@
+:root{
+  /*COLOR*/
+  --color-backgroung: #1A1A1A;
+  --color-white-100: #f0f0f0;
+  --color-white-75: #D9D9D9;
+  --color-white-50: #FFFFFF80;
+  --color-white-00: #FFFFFF10;
+  --color-green-linear: -webkit-linear-gradient(307.72deg, #A7F306 2.04%, #F3CD06 98.59%);
+  --color-gray-linear: linear-gradient(90.01deg, #FFFFFF 0.01%, rgba(255, 255, 255, 0.3) 49.48%, #FFFFFF 99.99%);
+  --color-black-left: linear-gradient(to left, rgba(255, 255, 255, 0.04) 20%, rgba(255, 255, 255, 0) 80%);
+  --color-black-right: linear-gradient(to right, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+  /*FONT*/
+  --Font-A: 'Raleway', sans-serif;
+  --Font-B: 'Plus Jakarta Sans', sans-serif;
+}

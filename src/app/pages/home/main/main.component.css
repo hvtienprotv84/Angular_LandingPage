@@ -1,0 +1,285 @@
+main {
+  height: 100%;
+}
+
+.main-name {
+  text-align: center;
+  font-size: 3.75rem;
+  padding: 50px 0px;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  max-width: 100%;
+}
+
+.img-A {
+  width: 1200px;
+  left: 0px;
+  top: 40px;
+  filter: brightness(90%);
+}
+
+.img-C {
+  width: 440px;
+  left: 450px;
+  top: 90px;
+  animation: plasm 5s infinite;
+  transition: 0.5s;
+}
+
+@keyframes plasm{
+  0%{transform: translateY(10px);}
+  50%{transform: translateY(0px);}
+  100%{transform: translateY(10px);}
+}
+
+.main-name h1 {
+  font-weight: 800;
+  font-family: var(--Font-A);
+  background: var(--color-gray-linear);
+  letter-spacing: 1px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-A {
+  display: flex;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.section-A span {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-white-50);
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 32px;
+  text-align: center;
+  width: 250px;
+  height: max-content;
+}
+
+.left {
+  padding: 30px 50px 30px 30px;
+  background: var(--color-black-left);
+  border-right: 1px solid #80808033;
+}
+
+.right {
+  padding: 30px 30px 30px 0px;
+  background: var(--color-black-right);
+  border-left: 1px solid #80808033;
+}
+
+.section-B {
+  justify-self: end;
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 250%;
+  letter-spacing: -0.03em;
+  color: var(--color-white-50);
+}
+
+.btn-group{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  padding: 25px 50px;
+  border-radius: 32px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-backgroung);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn-A {
+  height: max-content;
+}
+
+.btn-B {
+  margin-top: 80px;
+  background: var(--color-backgroung);
+  color: var(--color-white-75);
+  border: 1px solid #80808033;
+}
+
+@media screen and (max-width: 1460px) {
+  .img-A {
+    width: 900px;
+    top: 100px;
+  }
+
+  .img-C {
+    width: 350px;
+    left: 400px;
+    top: 90px;
+  }
+
+  .left, .right {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main-name {
+    font-size: 3rem;
+  }
+
+  .left, .right {
+    width: 100px;
+  }
+
+  .img-A {
+    width: 700px;
+    top: 120px;
+  }
+
+  .img-C {
+    width: 250px;
+    left: 300px;
+    top: 90px;
+  }
+
+  .left, .right {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main-section {
+    margin-top: 40%;
+    align-self: center;
+  }
+
+  .main-name {
+    font-size: 2.25rem;
+  }
+
+  .img-A {
+    width: 700px;
+    top: 60px;
+  }
+
+  .img-C {
+    width: 250px;
+    left: 300px;
+    top: 75px;
+  }
+
+  .btn-group {
+    gap: 10px;
+  }
+
+  .btn-B {
+    margin-top: 0px;
+  }
+
+  .btn-A:after {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+
+  .main-name {
+    font-size: 1.75rem;
+  }
+
+  .section-A {
+    justify-self: center;
+    max-width: auto;
+    margin-top: 10px;
+  }
+
+  .section-B {
+    justify-self: center;
+    max-width: auto;
+    margin-top: 20px;
+  }
+
+  .left, .right {
+    background-color: #80808010;
+    padding: 15px 10px;
+  }
+
+  .img-A {
+    width: 500px;
+    top: 50px;
+  }
+
+  .img-C {
+    width: 150px;
+    left: 220px;
+    top: 75px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main-name {
+    font-size: 1.15rem;
+  }
+
+  .img-A {
+    width: 400px;
+    top: 40px;
+  }
+
+  .img-C {
+    width: 100px;
+    left: 150px;
+    top: 65px;
+  }
+
+  .btn-group {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .section-A {
+    font-size: 1.10rem;
+    gap: 10px;
+  }
+
+  .section-B {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 80%;
+    padding: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .main-name {
+    font-size: 1rem;
+  }
+
+  .img-A {
+    top: 60px;
+  }
+}

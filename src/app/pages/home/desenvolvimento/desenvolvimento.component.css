@@ -1,0 +1,159 @@
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text-green2{
+  background: var(--color-green-linear);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Times New Roman', Times, serif
+}
+#developer{
+  background: var(--color-white-100);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Times New Roman', Times, serif
+}
+
+#about_title{
+ color: #b4ed06;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.product h1 {
+  font-family: var(--font-A);
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.product p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+  color: var(--color-white-50);
+  max-width: 630px;
+}
+
+.product-itens {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 1.3rem;
+  gap: 25px;
+}
+
+.product li::before {
+  content: "";
+  background: url("src/assets/images/icons/check.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.product button {
+    padding: 20px 40px;
+    border-radius: 32px;
+    border: none;
+    font-weight: 400;
+    font-size: 1.15rem;
+    background: var(--color-backgroung);
+    border: 1px solid var(--color-white-50);
+    color: var(--color-white-100);
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .product h1 {
+    font-size: 4rem;
+  }
+
+  .product p {
+    font-size: 1.15rem;
+  }
+
+  .product-itens {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .product {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product h1 {
+    font-size: 2.25rem;
+  }
+
+  .titulo img {
+    display: none;
+  }
+
+  img {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .product {
+    text-align: center;
+  }
+
+  .product-itens {
+    font-size: 1.15rem;
+  }
+
+  .product p {
+    font-size: 1.05rem;
+    width: 370px;
+    margin-left: 215px;
+  }
+
+  .product h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  .product button {
+    padding: 15px 20px;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+}
+
+
+
+
