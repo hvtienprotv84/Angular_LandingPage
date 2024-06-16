@@ -3,5 +3,5 @@
 - TypeScript
 
 # RUN
-`npm start`
-`http://localhost:4200/`
+- `npm start`
+- `http://localhost:4200/`
