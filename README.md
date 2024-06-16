@@ -1,4 +1,4 @@
-# Angular - LandingPage
+# Angular - LandingPage - Responsive
 - Angular
 - TypeScript
 
